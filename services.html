@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GR PATIALA JEWELLERS - Services</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jewels-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&amp;family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&amp;display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+        <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewbox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewbox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="nav-icon" viewbox="0 0 16 16">
+        <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewbox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewbox="0 0 16 16">
+        <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="expert" viewbox="0 0 15 15">
+        <path fill="currentColor" fill-rule="evenodd" d="M7.5.875a3.625 3.625 0 0 0-1.006 7.109c-1.194.145-2.218.567-2.99 1.328c-.982.967-1.479 2.408-1.479 4.288a.475.475 0 1 0 .95 0c0-1.72.453-2.88 1.196-3.612c.744-.733 1.856-1.113 3.329-1.113s2.585.38 3.33 1.113c.742.733 1.195 1.892 1.195 3.612a.475.475 0 1 0 .95 0c0-1.88-.497-3.32-1.48-4.288c-.77-.76-1.795-1.183-2.989-1.328A3.627 3.627 0 0 0 7.5.875ZM4.825 4.5a2.675 2.675 0 1 1 5.35 0a2.675 2.675 0 0 1-5.35 0Z" clip-rule="evenodd"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="creative" viewbox="0 0 24 24">
+        <path fill="currentColor" d="m18.85 10.39l1.06-1.06c.78-.78.78-2.05 0-2.83L18.5 5.09c-.78-.78-2.05-.78-2.83 0l-1.06 1.06l4.24 4.24zm-4.24 1.42L7.41 19H6v-1.41l7.19-7.19l1.42 1.41zm-1.42-4.25L4 16.76V21h4.24l9.19-9.19l-4.24-4.25zM19 17.5c0 2.19-2.54 3.5-5 3.5c-.55 0-1-.45-1-1s.45-1 1-1c1.54 0 3-.73 3-1.5c0-.47-.48-.87-1.23-1.2l1.48-1.48c1.07.63 1.75 1.47 1.75 2.68zM4.58 13.35C3.61 12.79 3 12.06 3 11c0-1.8 1.89-2.63 3.56-3.36C7.59 7.18 9 6.56 9 6c0-.41-.78-1-2-1c-1.26 0-1.8.61-1.83.64c-.35.41-.98.46-1.4.12a.992.992 0 0 1-.15-1.38C3.73 4.24 4.76 3 7 3s4 1.32 4 3c0 1.87-1.93 2.72-3.64 3.47C6.42 9.88 5 10.5 5 11c0 .31.43.6 1.07.86l-1.49 1.49z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="dedicated" viewbox="0 0 24 24">
+        <g id="feTarget0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+          <g id="feTarget1" fill="currentColor" fill-rule="nonzero">
+            <path id="feTarget2" d="M19.938 13A8.004 8.004 0 0 1 13 19.938V22h-2v-2.062A8.004 8.004 0 0 1 4.062 13H2v-2h2.062A8.004 8.004 0 0 1 11 4.062V2h2v2.062A8.004 8.004 0 0 1 19.938 11H22v2h-2.062ZM12 18a6 6 0 1 0 0-12a6 6 0 0 0 0 12Zm0-3a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"></path>
+          </g>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-cart" viewbox="0 0 512 496">
+        <path fill="currentColor" d="M448 69H137l-3-12q-5-23-22.5-37.5T70 5H21q-9 0-15 6T0 27q0 9 6 15t15 6h49q19 0 22 17l49 256q6 21 23.5 34t38.5 13h202q10 0 16-6t6-15q0-22-22-22H203q-14 0-20-12l-2-9h214q20 0 36.5-12t22.5-31l58-123v-5q0-27-18.5-45.5T448 69zm-32 175v2q-3 15-21 15H173l-28-149h303q18 0 21 17zM256 432q0 18-12.5 30.5T213 475q-17 0-29.5-12.5T171 432t12.5-30.5T213 389q18 0 30.5 12.5T256 432zm171 0q0 18-12.5 30.5T384 475t-30.5-12.5T341 432t12.5-30.5T384 389t30.5 12.5T427 432z"></path>
+      </symbol>
+    </svg>
+
+    <!-- <div id="preloader">
+      <span class="loader"></span>
+    </div> -->
+
+    <div class="search-box position-relative overflow-hidden w-100">
+      <div class="search-wrap">
+        <div class="close-button position-absolute">
+          <svg class="close" width="22" height="22">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+        <form id="search-form" class="text-center pt-3" action="" method="">
+          <input type="text" class="search-input fs-5 p-4 bg-transparent" placeholder="Search...">
+          <svg class="search" width="22" height="22">
+            <use xlink:href="#search"></use>
+          </svg>
+        </form>
+      </div>
+    </div>
+
+    
+  <header id="header" class="site-header text-black">
+    <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="logox.png" style="width: 190px;" class="logo">
+          <!-- <h3>GR PATIALA JEWELLERS</h3> -->
+        </a>
+        <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="navbar-icon" width="50" height="50">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="logox.png" style="width: 200px;" class="logo">
+            </a>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="navbar" class="navbar-nav text-capitalize justify-content-end align-items-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link me-4 " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4 active" href="services.html">Services</a>
+              </li>
+              
+              <li class="nav-item">
+                <div class="user-items ps-5">
+                  <ul class="d-flex justify-content-end list-unstyled">
+                    <li class="search-item pe-3" data-bs-toggle="collapse" data-bs-target="#search-box"
+                      aria-controls="search-box" aria-expanded="false" aria-label="Toggle navigation">
+                      <svg class="search" width="18" height="18">
+                        <use xlink:href="#search"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+<!-- Fixed Icon in White Circle -->
+<div class="fixed-icon-wrapper">
+  <img src="img.png" alt="Fixed Icon">
+</div>
+
+<style>
+.fixed-icon-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 29px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.fixed-icon-wrapper img {
+  max-width: 100%;  /* keep image smaller inside */
+  max-height: 71%;
+}
+</style>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center margin-large">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="hero-content align-items-center">
+          <h1 class="display-1">Our Services</h1>
+          <div class="breadcrumbs">
+            <span class="item">
+              <a href="index.html">Home /</a>
+            </span>
+            <span class="item">Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-us" class="padding-large pt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <img src="images/shero.avif" alt="Jewellery" class="img-fluid">
+            <div class="col-lg-10 mx-auto text-center pt-5">
+              <blockquote class="fs-4">At GR Patiala Jewellers, we offer a complete range of jewellery services to meet all your needs. From creating custom designs and resizing rings to cleaning, polishing, and testing gold and diamonds, our expert team is here to help. We also provide valuations, certifications, and gold buyback services, ensuring trust and reliability at every step. With care, honesty, and experience, we make sure your jewellery always shines at its best.</blockquote>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Services Section -->
+  <section id="jewellery-services">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="custom" width="50" height="50">
+            <use xlink:href="#custom"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Custom Jewelry Design</h3>
+            <p>Bespoke designs, CAD modeling, and personal engravings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="repair" width="50" height="50">
+            <use xlink:href="#repair"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Jewelry Repair & Resizing</h3>
+            <p>Ring sizing, chain & clasp repairs, stone resetting.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="cleaning" width="50" height="50">
+            <use xlink:href="#cleaning"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Cleaning & Polishing</h3>
+            <p>Ultrasonic cleaning, rhodium plating, and tarnish removal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="testing" width="50" height="50">
+            <use xlink:href="#testing"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Gold & Diamond Testing</h3>
+            <p>Purity testing, gemstone identification, and certification.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="valuation" width="50" height="50">
+            <use xlink:href="#valuation"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Valuation & Appraisal</h3>
+            <p>For insurance, resale, and antique jewelry.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="buyback" width="50" height="50">
+            <use xlink:href="#buyback"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>Gold & Jewelry Buyback</h3>
+            <p>We buy old gold, silver, and diamond jewelry.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="features-item text-center mb-5">
+          <svg class="xrf" width="50" height="50">
+            <use xlink:href="#xrf"></use>
+          </svg>
+          <div class="features-content mt-3">
+            <h3>XRF Certification</h3>
+            <p>Detailed analysis reports with advanced XRF technology.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-10">
+        <div class="display-header">
+          <h2 class="display-2">Need Assistence?</h2>
+          <p>
+            Have a question about our gold collections or need help choosing the perfect piece?  
+            Reach out to us at <a href="mailto:grpatialajewellers@gmail.com">sajidusama03@gmail.com</a>  
+            or call/WhatsApp us at <strong><a href="tel:+923215050431">0321-5050431</a></strong>.  
+          </p>
+        </div>
+        <div class="btn-center">
+          <a href="https://wa.me/923215050431" class="btn btn-primary btn-medium text-capitalize">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+    
+  <!-- Make sure you include FontAwesome in your <head> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<footer id="footer" class="overflow-hidden padding-large  text-dark">
+  <div class="container-fluid">
+    <div class="row d-flex flex-wrap justify-content-between">
+
+      <!-- About Section -->
+      <div class="col-lg-3 col-sm-6 pb-3 pe-4">
+        <div class="footer-menu">
+          <img src="logo.png" alt="GR Patiala Jewellers Logo" class="pb-3" style="max-width:110px;">
+          <p>
+            Discover timeless elegance with our handcrafted gold jewellery. From bridal sets and bangles to custom designs, 
+            we create pieces that celebrate your style and special moments.
+          </p>
+        </div>
+        <div class="copyright">
+          <p>© 2024 GR Patiala Jewellers. All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-sm-6 pb-3">
+        <div class="footer-menu text-capitalize">
+          <h5 class="widget-title pb-2">Our Services</h5>
+          <ul class="menu-list list-unstyled">
+            <li class="pb-2"><i class="fa-solid fa-gem me-2 "></i> Custom Jewelry Design</li>
+            <li class="pb-2"><i class="fa-solid fa-screwdriver-wrench me-2 "></i> Gold & Silver Repair</li>
+            <li class="pb-2"><i class="fa-solid fa-diamond me-2 "></i> Gemstone Replacement</li>
+            <li class="pb-2"><i class="fa-solid fa-ring me-2 "></i> Ring Resizing</li>
+            <li class="pb-2"><i class="fa-solid fa-pen-nib me-2 "></i> Engraving Services</li>
+            <li class="pb-2"><i class="fa-solid fa-soap me-2 "></i> Cleaning & Polishing</li>
+            <li class="pb-2"><i class="fa-solid fa-hand-holding-dollar me-2 "></i> Jewellery Buy-Back</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Info -->
+      <div class="col-lg-3 col-sm-6 pb-3">
+        <div class="footer-menu text-capitalize">
+          <h5 class="widget-title pb-2">Quick Info</h5>
+          <ul class="menu-list list-unstyled">
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Opening Hours: 11am – 10:30pm</li>
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Specialty: 22K Gold, Bridal & Diamond</li>
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Craftsmanship: Handcrafted Designs</li>
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Guarantee: 100% Certified</li>
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Pricing: Transparent & Fair</li>
+            <li class="pb-2"><i class="fa-solid  me-2 "></i> Experience: Trusted Craftsmen</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-menu contact-item">
+          <h5 class="widget-title text-capitalize pb-2">Contact Us</h5>
+          <p><i class="fa-solid fa-location-dot me-2 "></i> Shop#2, Niazi Plaza, Awan Market Rd, Khayaban e Sir Syed, Sector 2, 44000</p>
+          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923000000000" class="text-dark">0300-5258690</a></p>
+          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923120000000" class="text-dark">0321-5050431</a></p>
+          <p><i class="fa-solid fa-envelope me-2 "></i> <a href="mailto:grpatialajewellers@gmail.com" class="text-dark">sajidusama03@gmail.com</a></p>
+
+          <!-- Social Links -->
+          <div class="social-links mt-3">
+            <ul class="list-unstyled d-flex gap-3">
+              <li><a href="https://www.facebook.com/Grpatialajewelers/" class="text-dark"><i class="fab fa-facebook-f me-2"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/grpatiala_jewelers/" class="text-dark"><i class="fab fa-instagram me-2 "></i> Instagram</a></li>
+              <li>
+  <a href="https://wa.me/923215050431" target="_blank" class="text-dark">
+    <i class="fab fa-whatsapp me-2 text-success"></i> WhatsApp
+  </a>
+</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<style>
+  .footer-menu i {
+  color: #000000; /* gold */
+}
+
+</style>
+
+    <script src="js/query-1.11.0.min.js"></script>
+    <script src="js/swiper-swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- SVG ICONS FOR JEWELLERY SERVICES -->
+<svg style="display:none;">
+  
+  <!-- Custom Jewelry Design (pencil/diamond icon) -->
+  <symbol id="custom" viewBox="0 0 24 24">
+    <path d="M2 17.25V21h3.75L17.81 8.94l-3.75-3.75L2 17.25zM20.71 
+             7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 
+             0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+  </symbol>
+
+  <!-- Jewelry Repair & Resizing (tools / wrench) -->
+  <symbol id="repair" viewBox="0 0 24 24">
+    <path d="M22.7 19.3l-4.6-4.6a6.5 6.5 0 0 
+             0-8.4-8.4L14.3 12l-2.3 2.3-4.6-4.6a6.5 6.5 0 0 
+             0 8.4 8.4l4.6 4.6 2.3-2.4z"/>
+  </symbol>
+
+  <!-- Cleaning & Polishing (sparkle / star) -->
+  <symbol id="cleaning" viewBox="0 0 24 24">
+    <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2zm6 
+             10l.94 2.5L22 16l-3.06 1.5L18 20l-.94-2.5L14 16l3.06-1.5L18 12zM6 
+             14l.94 2.5L10 18l-3.06 1.5L6 22l-.94-2.5L2 18l3.06-1.5L6 14z"/>
+  </symbol>
+
+  <!-- Gold & Diamond Testing (diamond icon) -->
+  <symbol id="testing" viewBox="0 0 24 24">
+    <path d="M12 2l4.5 4H7.5L12 2zm9 6l-2.5-4h-4.6L21 8zM6.1 4L3.5 8h4.6L6.1 
+             4zm-2.6 6l8.5 12L2 10zm4.2 0l4.3 12L18.8 10H7.7zm9.5 0l-4.3 
+             12L22 10h-4.8z"/>
+  </symbol>
+
+  <!-- Valuation & Appraisal (document / certificate) -->
+  <symbol id="valuation" viewBox="0 0 24 24">
+    <path d="M6 2a2 2 0 0 0-2 2v16l4-2 4 2 4-2 4 
+             2V4a2 2 0 0 0-2-2H6zm0 2h12v13.17l-2-.67-2 
+             1-2-1-2 1-2-1-2 .67V4z"/>
+  </symbol>
+
+  <!-- Gold & Jewelry Buyback (shopping bag / coin) -->
+  <symbol id="buyback" viewBox="0 0 24 24">
+    <path d="M16 6V4a4 4 0 0 0-8 0v2H4v14h16V6h-4zM10 
+             4a2 2 0 0 1 4 0v2h-4V4zm2 
+             6a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+  </symbol>
+
+  <!-- XRF Certification (badge / check) -->
+  <symbol id="xrf" viewBox="0 0 24 24">
+    <path d="M12 2l3.09 6.26L22 
+             9.27l-5 4.87L18.18 22 12 
+             18.27 5.82 22 7 14.14l-5-4.87 
+             6.91-1.01L12 2zm-1 13l5-5-1.41-1.42L11 
+             12.17l-1.59-1.59L8 12l3 3z"/>
+  </symbol>
+
+</svg>
+
+  </body>
+</html>
