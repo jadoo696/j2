@@ -259,7 +259,7 @@
     </nav>
   </header>
 
-  <section id="billboard" class="overflow-hidden">
+<section id="billboard" class="overflow-hidden">
   <div class="swiper main-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -276,18 +276,21 @@
                 <!-- Overlay -->
                 <div class="overlay"></div>
 
-                <div class="banner-content padding-custom">
-                  <h2 class="display-2 text-capitalize text-light pb-2">GR Patiala Jewellers</h2>
-                  <p class="para text-light">We are trusted gold jewellers in Rawalpindi, bringing you timeless designs and pure quality.
+                <div class="banner-content xx2 padding-custom text-md-start text-center">
+                  <h2 class="display-2 xx text-capitalize text-light pb-2">GR Patiala Jewellers</h2>
+                  <p class="para text-light">
+                    We are trusted gold jewellers in Rawalpindi, bringing you timeless designs and pure quality.
                     <br>
                     From traditional sets to modern jewellery, we make every piece with care and honesty.
                   </p>
-                  <a href="shop.html" class="btn btn-medium btn-arrow position-relative mt-3">
-                    <span class="text-capitalize">Contact Now</span>
-                    <svg class="arrow-right position-absolute" width="18" height="20">
-                      <use xlink:href="#arrow-right"></use>
-                    </svg>
-                  </a>
+                  <div class="btn-wrapper" style="margin-right: 29px;">
+                    <a href="shop.html" class="btn btn-medium btn-arrow position-relative mt-3">
+                      <span class="text-capitalize">Contact Now</span>
+                      <svg class="arrow-right position-absolute" width="18" height="20">
+                        <use xlink:href="#arrow-right"></use>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
 
               </div>
@@ -305,40 +308,53 @@
 .hero-section {
   position: relative;
 }
-
 .hero-section .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.45); /* adjust darkness */
   z-index: 1;
 }
-
 .hero-section .banner-content {
   position: relative;
   z-index: 2; /* keep text above overlay */
 }
-</style>
 
-<style>
-/* Change background image for mobile */
+/* Mobile styling */
 @media (max-width: 768px) {
   #billboard .banner-item {
     background-image: url('ab.jpg') !important;
     background-position: center;
     background-size: cover;
-    height: 659px !important;/* smaller height for mobile */
+    height: 659px !important; /* smaller height for mobile */
   }
 
   #billboard .banner-content h2 {
-    font-size: 28px; /* adjust heading size for mobile */
+    font-size: 28px;
+    text-align: center;
+  }
+
+.xx2{
+  padding-left: 29px;
+}
+
+  .xx{
+    
+    padding-right: 26px !important;
+
   }
 
   #billboard .banner-content p {
     font-size: 16px;
+    text-align: center;
   }
 
-  .para{
-        padding-bottom: 47px;
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .para {
+    padding-bottom: 30px;
   }
 }
 </style>
@@ -973,8 +989,8 @@
         <div class="footer-menu contact-item">
           <h5 class="widget-title text-capitalize pb-2">Contact Us</h5>
           <p><i class="fa-solid fa-location-dot me-2 "></i> Shop#2, Niazi Plaza, Awan Market Rd, Khayaban e Sir Syed, Sector 2, 44000</p>
-          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923000000000" class="text-dark">0300-5258690</a></p>
-          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923120000000" class="text-dark">0321-5050431</a></p>
+          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923000000000" class="text-dark">0300-5258690  <b> Sajid Iqbal</b></a></p>
+          <p><i class="fa-solid fa-phone me-2 "></i> <a href="tel:+923120000000" class="text-dark">0321-5050431 <b>  M. Usama </b></a></p>
           <p><i class="fa-solid fa-envelope me-2 "></i> <a href="mailto:grpatialajewellers@gmail.com" class="text-dark">sajidusama03@gmail.com</a></p>
 
           <!-- Social Links -->
