@@ -165,3 +165,17 @@
   }); // End of a document
 
 })(jQuery);
+
+
+ window.addEventListener("load", function() {
+    document.getElementById("preloader").style.display = "none";
+  });
+
+  window.addEventListener("load", function() {
+    setTimeout(function(){
+      document.getElementById("preloader").style.opacity = "0";
+      setTimeout(function(){
+        document.getElementById("preloader").style.display = "none";
+      }, 500); // wait for fade-out
+    }, 1500); // loader stays 1.5 seconds longer
+  });
