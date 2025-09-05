@@ -806,7 +806,7 @@ h5 {
   #billboard .banner-content {
     background-color: rgba(246, 245, 242, 0.5);
     height: 100%;
-            padding-left: 52px;
+/*             padding-left: 52px; */
 
   }
 
@@ -1023,4 +1023,5 @@ h5 {
 .pagination .page-item a.page-link:focus {
   background-color: var(--bs-primary);
   color: var(--bs-light);
+
 }
