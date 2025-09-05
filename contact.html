@@ -28,6 +28,20 @@
 
   <!-- Scripts -->
   <script src="js/modernizr.js"></script>
+      <script>
+  window.addEventListener("load", function() {
+    document.getElementById("preloader").style.display = "none";
+  });
+
+  window.addEventListener("load", function() {
+    setTimeout(function(){
+      document.getElementById("preloader").style.opacity = "0";
+      setTimeout(function(){
+        document.getElementById("preloader").style.display = "none";
+      }, 500); // wait for fade-out
+    }, 1500); // loader stays 1.5 seconds longer
+  });
+</script>
 </head>
 
   <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
